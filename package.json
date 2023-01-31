@@ -1,0 +1,29 @@
+{
+  "name": "online-banking",
+  "version": "1.0.0",
+  "description": "Online banking portal simulator",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/pages/login/login.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claraortizdelatorre/online-banking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Claraortizdelatorre/online-banking/issues"
+  },
+  "homepage": "https://github.com/Claraortizdelatorre/online-banking#readme",
+  "dependencies": {
+    "@lemoncode/fonk": "^1.5.4",
+    "axios": "^1.3.0",
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1"
+  }
+}
