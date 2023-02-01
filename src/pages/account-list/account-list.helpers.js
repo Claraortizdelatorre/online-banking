@@ -19,6 +19,7 @@ const getOptions = id => {
   return select;
 };
 
+//añade filas de las cuentas
 const getAccountRow = account => {
   const ibanAnchor = document.createElement('a');
   ibanAnchor.href = routes.account(account.id);
