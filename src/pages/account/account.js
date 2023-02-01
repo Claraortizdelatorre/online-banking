@@ -59,9 +59,10 @@ onUpdateField('alias', (event) => {
     });
 });
 
-
+//guardar nueva cuenta
 const onSave = () => {
     const apiAccount = mapAccountFromVMToApi(account);
+    //inserta la nueva cuenta
     return isEditMode ? updateAccount(apiAccount) : insertAccount(apiAccount);
 }
 

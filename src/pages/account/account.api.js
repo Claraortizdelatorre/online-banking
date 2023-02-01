@@ -2,7 +2,7 @@ import Axios from "axios";
 
 const url = `${process.env.BASE_API_URL}/account`;
 
-//pasamos la cuenta que queremos insertar
+//pasamos la cuenta que queremos insertar nueva
 export const insertAccount = account => 
     Axios.post(`${url}/${account.id}`, account).then(response => {
         return response.data;
