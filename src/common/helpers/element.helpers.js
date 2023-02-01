@@ -1,3 +1,4 @@
+/*Recoge lo introducido en el input de usuario*/ 
 export const onUpdateField = (id, callback) => {
   const element = document.getElementById(id);
   element.oninput = event => callback(event);
