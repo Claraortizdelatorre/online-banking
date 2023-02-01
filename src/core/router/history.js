@@ -1,4 +1,4 @@
-//import qs from 'qs';
+import qs from 'qs';
 
 export const history = {
   push: route => {
@@ -8,6 +8,6 @@ export const history = {
     window.history.back();
   },
   getParams: () => {
-   // return qs.parse(window.location.search, { ignoreQueryPrefix: true });
+    return qs.parse(window.location.search, { ignoreQueryPrefix: true });
   },
 };

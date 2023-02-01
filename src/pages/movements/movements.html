@@ -26,8 +26,8 @@
     <nav>
       <div class="container">
         <ul class="container">
-          <li class="selected"><a href="../account-list/account-list.html">Mis cuentas</a></li>
-          <li><a href="../movements/movements.html">Movimientos</a></li>
+          <li><a href="../account-list/account-list.html">Mis cuentas</a></li>
+          <li class="selected">Movimientos</li>
           <li><a href="../transfer/transfer.html">Transferencias</a></li>
         </ul>
       </div>
@@ -35,35 +35,31 @@
     <section>
       <div class="container">
         <div>
-          <h1 class="titulo_paginas">Cuenta Bancaria</h1>
+          <h1 class="titulo_paginas">
+            Saldos y Últimos movimientos
+            <div class="resumen_destacado">
+              <div class="saldo_disponible align-right">
+                <p class="label">SALDO DISPONIBLE</p>
+                <p id="balance" class="importe"></p>
+              </div>
+            </div>
+          </h1>
+          <h3 class="subtitulo_paginas">
+            Alias: <span id="alias"></span><span class="iban">IBAN: <span id="iban"></span></span>
+          </h3>
         </div>
-        <form>
-          <div class="form_container">
-            <div>
-              <label>Tipo de cuenta:</label>
-              <select id="type" class="select">
-                <option value=""></option>
-                <option value="1">Nómina</option>
-                <option value="2">Ahorro</option>
-                <option value="3">Normal</option>
-              </select>
-              <p id="type-error" class="error"></p>
-            </div>
-            <div>
-              <label>Alias:</label>
-              <input id="alias" class="large" type="text" />
-              <p id="alias-error" class="error"></p>
-            </div>
-          </div>
-          <button
-            id="save-button"
-            type="submit"
-            class="btn_enviar_transferencia"
-          >
-            GUARDAR
-          </button>
-        </form>
-        <div class="grid"></div>
+        <table cellspacing="1" cellpadding="0" align="center" class="full">
+          <thead>
+            <tr>
+              <td>FECHA</td>
+              <td>FECHA VALOR</td>
+              <td>DESCRIPCIÓN</td>
+              <td>IMPORTE</td>
+              <td>SALDO DISPONIBLE</td>
+            </tr>
+          </thead>
+          <tbody id="movement-list"></tbody>
+        </table>
       </div>
     </section>
     <footer id="footer">
