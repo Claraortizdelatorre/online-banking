@@ -20,6 +20,7 @@
     "rimraf": "^3.0.0"
   },
   "dependencies": {
+    "@lemoncode/fonk": "^1.5.4",
     "axios": "^0.19.2",
     "qs": "^6.9.1"
   },
