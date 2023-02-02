@@ -4,7 +4,6 @@ import { addMovementRows } from './movements.helpers';
 import { history } from '../../core/router';
 
 
-
 //trae los datos
 getMovementsList().then(movementList => {
     console.log("entra aqui")
@@ -16,10 +15,9 @@ getMovementsList().then(movementList => {
     //seleccion
     viewModelMovementList.forEach(movements => {
         onUpdateField(`select-${movements.id}`, (event) => { //cuenta elegida
-            console.log(route);
-            const route = event.target.value; //ruta donde queremos navegar
-            console.log(route);
+            const route = event.target.value; //ruta donde queremos navega
             history.push(route); //accedemos a la ruta
         });
     });
 });
+//
