@@ -1,4 +1,9 @@
 const getMovementRow = movement => {
+
+  document.getElementById("balance").innerHTML = movement.balance;
+  //document.getElementById("iban").innerHTML = movement.alias;
+  //document.getElementById("alias").innerHTML = movement.alias;
+
   const transactionCell = document.createElement('td');
   transactionCell.textContent = movement.transaction;
 
@@ -34,6 +39,7 @@ const getMovementRow = movement => {
 };
 
 export const addMovementRows = movementList => {
+ 
   movementList.forEach(movement => {
     const row = getMovementRow(movement);
     const listElement = document.getElementById('movement-list');
