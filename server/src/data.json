@@ -117,5 +117,19 @@
       "accountId": "3"
     }
   ],
-  "transfer": []
+  "transfer": [
+    {
+      "iban": "ES66 2100 0418 4012 3456 7891",
+      "name": "Clara",
+      "amount": "90",
+      "concept": "HOLA",
+      "notes": "prueba",
+      "day": "12",
+      "month": "2",
+      "year": "2023",
+      "date": "2023-2-12",
+      "email": "clara.ortizde@gmail.com",
+      "id": 1
+    }
+  ]
 }
